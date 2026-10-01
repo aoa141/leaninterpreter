@@ -55,3 +55,40 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Visual Studio / Rider / VS Code
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.rsuser
+.idea/
+*.sln.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# OS files
+.DS_Store
+Thumbs.db
+
+## Lean 4
+## Keep lean-toolchain, lakefile.lean / lakefile.toml and lake-manifest.json committed.
+
+# Lake build output and dependencies (Lake >= v4.3)
+.lake/
+# Older Lake versions
+/build/
+/lake-packages/
+
+# Compiled Lean artifacts
+*.olean
+*.ilean
+*.trace
+*.hash
