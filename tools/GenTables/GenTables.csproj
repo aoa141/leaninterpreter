@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Regenerates src/LeanInterpreter/Interp/ExternTable.g.cs and ExportStubs.g.cs from the
+       `.olean`/`.ir` files of a sysroot. Only needed when the Lean version changes.
+       Usage: `dotnet run -c Release` in this directory, with the sysroot as argument. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/LeanInterpreter/LeanInterpreter.csproj" />
+  </ItemGroup>
+</Project>

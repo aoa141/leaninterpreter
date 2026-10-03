@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- LeanInterpreter: the Lean runtime, kernel, .olean reader/writer and an IR interpreter that
+       runs Lean's own frontend from the IR in the sysroot's library files. Self-contained: copy
+       this directory into another solution and reference the project. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>LeanInterpreter</RootNamespace>
+    <AssemblyName>LeanInterpreter</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Optimize>true</Optimize>
+    <Deterministic>true</Deterministic>
+    <NoWarn>$(NoWarn);CS0164;CS0162;CS0168;CS0219;CS8321;CS1591</NoWarn>
+  </PropertyGroup>
+</Project>
